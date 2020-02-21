@@ -1,8 +1,13 @@
 # 基于生成式+检索式的自动问系统
 
 安装需要的环境，具体环境要求详见文件
-基本都是常见的第三方模块，jieba, numpu, sklearn, nltk, gensim, sklearn, pickle, torch
+
+基本都是常见的第三方模块，
+
+jieba, numpu, sklearn, nltk, gensim, sklearn, pickle, torch
+
 环境配置完成后直接运行Demo.py即可，该演示文件直接在控制台输入输出，你们可以根据情况改成与后台对接
+
 
 
 文件说明：
