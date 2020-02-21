@@ -12,6 +12,7 @@ Generating.py		生成式方法
 MYTOOL.py		公用的部分文本处理函数
 Searching.py		检索式方法
 
+
 数据说明：
 corpus.txt		实际筛选出的问答语料库
 model.model		词嵌入模型
