@@ -1,0 +1,7 @@
+xlwings==0.19.5
+jieba==0.42.1
+torch==1.6.0
+gensim==3.8.3
+nltk==3.5
+scikit-learn==0.23.1
+numpy~=1.18.5

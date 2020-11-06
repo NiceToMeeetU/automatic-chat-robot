@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
-# @Time    : 20/02/09 16:36
+# coding   : utf-8 
+# @Time    : 20/11/06 16:26
 # @Author  : Wang Yu
-# @Project : CHAT
+# @Project : automatic-chat-robot
 # @File    : Demo.py
 # @Software: PyCharm
 
@@ -9,8 +9,8 @@
 """效果演示用"""
 
 
-from Searching import *
-from Generating import *
+from code.Generating import *
+from code.Searching import *
 
 
 # 进行系统检查并打印检查结果
@@ -41,3 +41,4 @@ def demo():
 
 if __name__ == '__main__':
     demo()
+

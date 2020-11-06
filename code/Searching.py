@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
-# @Time    : 20/02/06 16:01
+# coding   : utf-8 
+# @Time    : 20/11/06 16:25
 # @Author  : Wang Yu
-# @Project : CHAT
+# @Project : automatic-chat-robot
 # @File    : Searching.py
 # @Software: PyCharm
 
@@ -19,9 +19,9 @@ from sklearn.decomposition import PCA
 from sklearn.metrics.pairwise import cosine_similarity
 import os.path
 
-CORPUS_FILE = 'data/corpus.txt'
-MODEL_FILE = 'data/model.model'
-MATRIX_FILE = 'data/QD.txt'
+CORPUS_FILE = './data/corpus.txt'
+MODEL_FILE = './data/model.model'
+MATRIX_FILE = './data/QD.txt'
 
 
 # 训练词向量
@@ -456,3 +456,4 @@ def initial_jieba(sentence_in):
 
 if __name__ == '__main__':
     pass
+

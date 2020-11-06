@@ -1,38 +1,31 @@
-# 基于生成式+检索式的自动问答系统
+# 自动聊天机器人
 
-《Java》课程作业，关于心理健康的聊天机器人
+《面向对象Java》课程大作业，基于检索式+生成式构建的心理健康主题的自动聊天机器人。The Java course homework, an automatic chat robot based on the mental health theme constructed by retrieval & generative.
 
-安装需要的环境，具体环境要求详见文件
+原始语料库来自其他小组的爬取的心理健康主题问答对，质量参差不齐。
 
-基本都是常见的第三方模块，
+#### 主要实现思路：
 
-jieba, numpu, sklearn, nltk, gensim, sklearn, pickle, torch
+- 利用GloVe工具实现词嵌入，SIF法构建驹向量；
+- 对于有直接答案的简单问题，直接通过余弦相似度搜索一致的现成答案；
+- 训练了一个seq2seq的循环神经网络，在解码方向加入attention机制，对于相似度低于阈值（80%）的复杂问题，使用网络生成答案。
 
-环境配置完成后直接运行Demo.py即可，该演示文件直接在控制台输入输出，你们可以根据情况改成与后台对接
+#### 使用方法：
 
+- 下载语料库文件，将该`data`文件夹直接放入项目根目录，地址：[Google Drive](https://drive.google.com/drive/folders/1JeFioglqzN3Den4VanfvqPsdsyTDO77k?usp=sharing)，
 
+- `pip install -r requirements.txt `，或者手动安装以下包
 
-文件说明：
+  ```bash
+  xlwings==0.19.5
+  jieba==0.42.1
+  torch==1.6.0
+  gensim==3.8.3
+  nltk==3.5
+  scikit-learn==0.23.1
+  numpy==1.18.5
+  ```
 
-corpus_processing.py	对原始数据的处理
+- 直接运行`Demo.py`即可。
 
-Demo.py			演示主程序
-
-Generating.py		生成式方法
-
-MYTOOL.py		公用的部分文本处理函数
-
-Searching.py		检索式方法
-
-
-
-数据说明：
-
-corpus.txt		实际筛选出的问答语料库
-
-model.model		词嵌入模型
-
-NN-model.tar		循环网络模型
-
-QD.txt		问题向量矩阵
-
+详细的技术文档见`report.pdf`

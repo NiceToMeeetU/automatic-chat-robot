@@ -1,9 +1,10 @@
-# -*- coding: utf-8 -*-
-# @Time    : 20/02/09 8:31
+# coding   : utf-8 
+# @Time    : 20/11/06 16:24
 # @Author  : Wang Yu
-# @Project : CHAT
+# @Project : automatic-chat-robot
 # @File    : Generating.py
 # @Software: PyCharm
+
 
 
 """生成式回答机制"""
@@ -19,7 +20,7 @@ import os
 PAD_token, SOS_token, EOS_token = 0, 1, 2
 USE_CUDA = torch.cuda.is_available()
 device = torch.device("cuda" if USE_CUDA else "cpu")
-NN_MODEL_FILE = "data/NN-model.tar"
+NN_MODEL_FILE = "./data/NN-model.tar"
 
 
 # 检查各种文件是否存在
@@ -312,3 +313,4 @@ def evaluate_input(searcher_in, voc_in, input_sentence):
 
 if __name__ == '__main__':
     pass
+

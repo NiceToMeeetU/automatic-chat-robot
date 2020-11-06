@@ -1,6 +1,7 @@
-# -*- coding: utf-8 -*-
-# @Time    : 19/12/28 13:46
+# coding   : utf-8 
+# @Time    : 20/11/06 16:16
 # @Author  : Wang Yu
+# @Project : automatic-chat-robot
 # @File    : MYTOOL.py
 # @Software: PyCharm
 
@@ -8,7 +9,6 @@
 """文本处理的自用工具"""
 
 import re
-import numpy as np
 import jieba
 
 # 读取文本文件
@@ -45,5 +45,6 @@ if __name__ == '__main__':
         print(' '.join(jieba.cut(a[0])),end='\t')
         print(' '.join(jieba.cut(a[1])),end='\t')
         print(' '.join(jieba.cut(a[2])))
+
 
 

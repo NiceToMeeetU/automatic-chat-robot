@@ -1,19 +1,20 @@
-# -*- coding: utf-8 -*-
-# @Time    : 20/02/08 9:19
+# coding   : utf-8 
+# @Time    : 20/11/06 16:15
 # @Author  : Wang Yu
-# @Project : CHAT
+# @Project : automatic-chat-robot
 # @File    : corpus_processing.py
 # @Software: PyCharm
 
 
-"""将王欣蕾组、刘书航组给定的原始数据正则、分词，存入excel后筛选"""
+
+"""将其他小组给定的原始数据正则、分词，存入excel后筛选"""
 
 
 from MYTOOL import read_file, zhengze
 import xlwings as xw
 import jieba
 
-RESULT_FILE = "data/TQR_ALL.xlsx"
+RESULT_FILE = "./data/TQR_ALL.xlsx"
 
 
 # 预处理好的数据写入excel
@@ -122,3 +123,4 @@ if __name__ == '__main__':
 
     # 问答语料库与处理完毕
     pass
+
